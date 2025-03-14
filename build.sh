@@ -80,7 +80,7 @@ groupadd -g ${GID_ONEPASSWORD} onepassword
 groupadd -g ${GID_ONEPASSWORDCLI} onepassword-cli
 
 # Now let's install the packages.
-$DNF install -y 1password 1password-cli
+dnf5 install -y 1password 1password-cli
 
 # This places the 1Password contents in an image safe location
 mv /var/opt/1Password /usr/lib/1Password # move this over here
